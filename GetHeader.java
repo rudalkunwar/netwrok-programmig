@@ -14,6 +14,7 @@ public class GetHeader {
 
             // Print all headers
             Map<String, List<String>> headers = uc.getHeaderFields();
+            
             for (Map.Entry<String, List<String>> entry : headers.entrySet()) {
                 System.out.println(entry.getKey() + ": " + entry.getValue());
             }
