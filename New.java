@@ -3,6 +3,6 @@ public class New{
         System.out.println("hello rudal");
     }
     public static void name(){
-        Sytem.out.println("hellow rudal");
+        System.out.println("hellow rudal");
     }
 }
