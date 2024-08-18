@@ -1,18 +1,16 @@
 import java.net.*;
 import java.io.*;
-
-public class RetrieveWebPage {
-    public static void main(String[] args) throws MalformedURLException, IOException {
-
-        URL ru = new URL("https://www.rudalkunwar.com.np");
-        URLConnection uc = ru.openConnection();
-
-        InputStream raw = uc.getInputStream();
-
-        BufferedReader br = new BufferedReader(new InputStreamReader(raw));
+public class RetriveWebPage{
+    public static void main(String[] args) throws MalformedURLException,IOException{
         
-        br.lines().forEach(System.out::println);
+        URL addr = new URL("https://www.google.com");
+        URLConnection uc = addr.openConnection();
 
+        InputStream input = uc.getInputStream();
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(input));
+
+        br.lines().forEach(System.out::println);
         br.close();
     }
 }
