@@ -9,6 +9,7 @@ public class ClientSocket{
         Socket s = new Socket(host,13);
 
 
+        System.out.println("Information about socket : ")
 
         System.out.println("Local address "+s.getLocalAddress());
         System.out.println("Local port "+s.getLocalPort());
@@ -26,5 +27,7 @@ public class ClientSocket{
         // while(line=br.read()!=-1){
         //     System.out.println((char)line);
         // }
+
+        s.close();
     }
 }
